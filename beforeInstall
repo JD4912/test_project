@@ -1,7 +1,9 @@
 #!/bin/bash
-
+rbenv install 2.7.2
+rbenv global 2.7.2
+gem install bundler
 rm -rf /home/ubuntu/rails
-
 git clone https://github.com/JD4912/test_project.git /home/ubuntu/rails
-
 cd /home/ubuntu/rails && rm Gemfile.lock
+bundle install 
+rails server -b 0.0.0.0
