@@ -5,7 +5,9 @@ hooks:
   BeforeInstall:
     - location: beforeInstall
       runas: root
-      
+  ApplicationStart:
+    - location: applicationStart.sh
+      runas: root
 # phases:
 #   install:
 #     commands:
