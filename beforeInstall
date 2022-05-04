@@ -21,6 +21,6 @@ rm -rf /home/ubuntu/rails
 git clone https://github.com/JD4912/test_project.git /home/ubuntu/rails
 cd /home/ubuntu/rails && rm Gemfile.lock
 bundle install 
-bundle exec passenger start -p 3000 -a 0.0.0.0 -d
+# bundle exec passenger start -p 3000 -a 0.0.0.0 -d
 
 
