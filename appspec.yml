@@ -1,28 +1,11 @@
 version: 0.0
-# os: linux
-# files:
-#   - source: /
-#     destination: /home/ubuntu/rails
-       
-# permissions:
-#   - object: /home/ubuntu/rails
-#     owner: root
-#     group: root
-#     mode: 777
-         
+os: linux
 phases:
   install:
     commands:
-      - echo "Stoping Rails server"
-      - if lsof -t -i:80 > /dev/null
-        then
-              kill $(lsof -t -i:80)
-        else
-               echo Nothing running on port 80
-        fi
       - echo "remove old files"
       - rm -rf /home/ubuntu/rails
-      - echo "clone new file using github repo"
+      - echo "cloning New files using github repo"
       - git clone https://github.com/JD4912/test_project.git /home/ubuntu/rails
       - echo "change the working directory and delete Gemfile.lock"
       - sudo cd /home/ubuntu/rails && rm Gemfile.lock\
