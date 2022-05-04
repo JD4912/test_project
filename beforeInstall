@@ -17,9 +17,9 @@ rbenv install 2.7.2
 rbenv global 2.7.2
 gem install bundler
 gem install rails -v 6.1.5
-rm -rf /home/ubuntu/rails
-git clone https://github.com/JD4912/test_project.git /home/ubuntu/rails
-cd /home/ubuntu/rails && rm Gemfile.lock
+rm -rf /mnt
+git clone https://github.com/JD4912/test_project.git /mnt
+cd /mnt && rm Gemfile.lock
 bundle install 
 # bundle exec passenger start -p 3000 -a 0.0.0.0 -d
 
