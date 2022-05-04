@@ -21,6 +21,6 @@ rm -rf /mnt
 git clone https://github.com/JD4912/test_project.git /mnt
 cd /mnt && rm Gemfile.lock
 bundle install 
-# bundle exec passenger start -p 3000 -a 0.0.0.0 -d
+bundle exec raila server -b 0.0.0.0
 
 
