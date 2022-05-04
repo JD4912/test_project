@@ -3,14 +3,14 @@ os: linux
 
 hooks:
   BeforeInstall:
-    - location: beforeInstall.sh
+    - location: beforeInstall
       runas: root
       
-phases:
-  install:
-    commands:
-      - echo "run bundle command"
-      - bundle install
-      - echo "Run rails server"
-      - rails server -b 0.0.0.0
+# phases:
+#   install:
+#     commands:
+#       - echo "run bundle command"
+#       - bundle install
+#       - echo "Run rails server"
+#       - rails server -b 0.0.0.0
       
