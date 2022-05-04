@@ -1,5 +1,11 @@
 version: 0.0
 os: linux
+
+hooks:
+  BeforeInstall:
+    - location: beforeInstall.sh
+      runas: root
+      
 phases:
   install:
     commands:
