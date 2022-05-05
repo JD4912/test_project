@@ -18,5 +18,4 @@ gem install bundler
 gem install rails -v 6.1.5
 cd /mnt
 bundle install 
-bundle exec raila server -b 0.0.0.0
-
+bundle exec puma -p 3000
