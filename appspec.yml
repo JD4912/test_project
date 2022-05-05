@@ -4,7 +4,7 @@ os: linux
 hooks:
   BeforeInstall:
     - location: beforeInstall
-      runas: root
+#       runas: root
   ApplicationStart:
     - location: applicationStart.sh
       runas: root
