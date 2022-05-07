@@ -1,8 +1,8 @@
 #!/bin/bash
 sudo su -
-rm -rf /mnt
-git clone https://github.com/JD4912/test_project.git /mnt
-cd /mnt 
+rm -rf /ruby
+git clone https://github.com/JD4912/test_project.git /ruby
+cd /ruby
 bundle install 
 
 
